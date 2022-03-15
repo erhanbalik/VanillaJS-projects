@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 10rem;
+    background: linear-gradient(rgb(40, 79, 119), rgb(103, 153, 202));
+    color: whitesmoke;
+}
+.location {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loc-timezone {
+    font-size: 32px;
+    letter-spacing: .2em;
+}
+.temp-degree {
+    font-size: 32px;
+}
+.temp-degree span {
+    font-size: 22px;
+    font-weight: 100;
+}
+.temp-desc {
+    font-size: 24px;
+    font-weight: lighter;
+    
+}

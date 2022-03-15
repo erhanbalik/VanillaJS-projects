@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;800;900&display=swap" rel="stylesheet">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="menustyle.css">
+    <title>Apple Music</title>
+</head>
+<body>
+    <section class="grid-section">
+        <div class="nav-left">
+            <div class="search">
+                <input type="text" placeholder="search">
+            </div>
+            <div class="menu-items">
+                <!-- Apple music bar -->
+                <article class="music-items">
+                    <header>
+                        <h5>Apple Music</h5>
+                    </header>
+                    <ul class="nav-category">
+                        <li class="category-item">
+                            <i class="fa-solid fa-circle-play"></i>
+                            <h5>Now Listen</h5>
+                        </li>
+                        <li class="category-item">
+                            <i class="fa-solid fa-dice-d20"></i>
+                            <h5>Browse</h5>
+                        </li> 
+                        <li class="category-item">
+                            <i class="fa-solid fa-radiation"></i>
+                            <h5>Radio</h5>
+                        </li> 
+                    </ul>
+                </article>
+                <!-- End of apple music bar -->
+                <!-- Archive bar -->
+                <article class="music-items">
+                    <header>
+                        <h5>Archive</h5>
+                    </header>
+                    <ul class="nav-category">
+                        <li class="category-item">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                            <h5>Last Added</h5>
+                        </li>
+                        <li class="category-item">
+                            <i class="fa-solid fa-user-astronaut"></i>
+                            <h5>Singer</h5>
+                        </li> 
+                        <li class="category-item">
+                            <i class="fa-solid fa-compact-disc"></i>
+                            <h5>Albums</h5>
+                        </li>
+                        <li class="category-item">
+                            <i class="fa-solid fa-music"></i>
+                            <h5>Songs</h5>
+                        </li> 
+                    </ul>
+                </article>
+                <!-- End Archive bar -->
+                <!-- List bar-->
+                <article class="music-items">
+                    <header>
+                        <h5>Your Lists</h5>
+                    </header>
+                    <ul class="nav-category">
+                        <li class="category-item">
+                            <i class="fa-solid fa-align-right"></i>
+                            <h5>All lists</h5>
+                        </li>
+                        <li class="category-item">
+                            <i class="fa-brands fa-gratipay"></i>
+                            <h5>Favorite</h5>
+                        </li> 
+                        <li class="category-item">
+                            <i class="fa-solid fa-rss"></i>
+                            <h5>Eminem-Lose your</h5>
+                        </li> 
+                    </ul>
+                </article>
+                <!-- End list bar-->
+            </div>
+        </div>
+        <!-- End NavBar -->
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <header class="player">
+                <div class="player-buttons">
+                    <button class=""><i class="fa-solid fa-arrow-rotate-left"></i></button>
+                    <button id="backward-btn"><i class="fa-solid fa-backward"></i></button>
+                    <button id="play-btn"><i class="fa-solid fa-play"></i></button>
+                    <button id="forward-btn"><i class="fa-solid fa-forward"></i></button>
+                    <button><i class="fa-solid fa-repeat"></i></button>
+                </div>
+                <div class="now-playing">
+                    <div class="player-img">
+                        <img src="../images/img-1.jpeg" alt="" id="img-song">
+
+                    </div>
+                    <div class="player-info">
+                        <sub id="song">Castle of Glass</sub>
+                        <sub id="artist">Linkinpark</sub>
+                        <audio id="audio">
+                            <source src="../Music/another-day.mp3">
+                        </audio>
+                    </div>
+                </div>
+                <div class="sound-info">
+                    <button><i class="fa-solid fa-volume-off"></i></button>
+                    <div class="progress">
+                        <div class="progress-bg">
+
+                        </div>
+                    </div>
+                    <button><i class="fa-solid fa-volume-high"></i></button>
+                </div>
+                <div class="info-history">
+                    <button>
+                        <i class="fa-solid fa-marker"></i>
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-align-center"></i>
+                    </button>
+                </div>
+            </header>
+            <!-- End Header -->
+            <!-- Now Listen -->
+            <div class="main">
+                <div class="main-title">
+                    <h2>Now Listen</h2>
+                </div>
+                <div class="section-info">
+                    <h3>Popular</h3>
+                    <!-- Albums section -->
+                    <div class="section-img">
+                        <div class="section-title">
+                            <h4>For you</h4>
+                            <article class="section-board">
+                                <img src="../images/artist-4.jpeg" alt="">
+                                <span>
+                                    <p>Metallica</p>
+                                </span>
+                                <span class="hover-buttons">
+                                    <button><i class="fa-solid fa-circle-play"></i></button>
+                                </span>
+                            </article>
+                        </div>
+                        <div class="section-title">
+                            <h4>New</h4>
+                            <article class="section-board">
+                                <img src="../images/artist-3.jpeg" alt="">
+                                <span>
+                                    <p>Rockn Roll</p>
+                                </span>
+                                <span class="hover-buttons">
+                                    <button><i class="fa-solid fa-circle-play"></i></button>
+                                </span>
+                            </article>
+                        </div>
+                        <div class="section-title">
+                            <h4>Hot playlist</h4>
+                            <article class="section-board">
+                                <img src="../images/artist-1.jpeg" alt="">
+                                <span>
+                                    <p>Ceza - Soguk Mevsim</p>
+                                </span>
+                                <span class="hover-buttons">
+                                    <button><i class="fa-solid fa-circle-play"></i></button>
+                                </span>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Now Listen -->
+        </div>
+    </section>
+
+    <!-- Script -->
+    <script src="app.js"></script>
+</body>
+</html>

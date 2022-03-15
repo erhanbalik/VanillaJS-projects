@@ -1,0 +1,264 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+    background-color: #67787d;
+}
+li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+button {
+    background: transparent;
+    border:none;
+    font-size:20px;
+    cursor: pointer;
+    
+}
+
+
+/* ----------NAVBAR----------------- */
+    /* Hide Menu */
+.menu-list-items {
+    width: 15%;
+    height: 100vh;
+    
+    position: absolute;
+    top:0;
+    left: -15%;
+    transition: 300ms all ease;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-top: 50%;
+    
+}
+.list li {
+    width: 100%;
+    line-height: 4rem;
+    font-size: 18px;
+    font-weight: 200;
+    text-align: center;
+}
+.list li:hover {
+    background-color: rgba(206, 206, 206, 0.603);
+    transition: 300ms all;
+}
+
+/* Show menu */
+.menu-list-items-show {
+    width: 15%;
+    height: 100vh;
+    background-color: rgba(207, 231, 230, 0.582);
+    position: absolute;
+    top:0;
+    left: 0;
+    transition: 300ms all ease;
+    
+}
+
+.menu-icon {
+    position: absolute;
+    left: 1%;
+    top:1%;
+}
+/* Hide Buttons  */
+.open-btn {
+    color:white;
+    visibility: visible;
+}
+.open-btn-hide{
+    visibility: hidden;
+}
+
+.close-btn {
+    visibility: hidden;
+}
+.close-btn-show {
+    visibility: visible;
+    margin-left:90%;
+    margin-top:3%;
+    color:white;
+}
+
+/* ------------Social Media ----------- */
+
+.social-media {
+    position: absolute;
+    right: 1%;
+    top: 1%;
+}
+.social-media span {
+    text-transform: uppercase;
+    pointer-events: none;
+    color: white;
+}
+
+
+.social-media button {
+    padding-left: 10px;
+    color:whitesmoke;
+}
+
+.main-menu {
+    max-width: 100vw;
+    max-height: 100vh;
+    transition: transform .5s ease-in-out;
+}
+.menu-img img {
+    width: 100vw;
+    height: 100vh;
+}
+.slide-btn {
+    position: absolute;
+    bottom:10%;
+    left:50%;
+    color:white;
+    font-size: 52px;
+    animation: slide 1s infinite ease-in-out;
+}
+.slide-text {
+    position: absolute;
+    bottom:3%;
+    left:47.5%;
+    font-size: 20px;
+    color: white;
+    font-weight: 200;
+    
+}
+@keyframes slide {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+/*--------------------- Food Menu-------------- */
+
+.menu-food-list {
+    width: 100vw;
+    height: 100vh;
+    background-color: #67787d;
+    position: relative;
+    
+}
+.single-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+}
+.single-container {
+    max-height: 100vh;
+    width: 90%;
+    display: flex;
+    align-items: top;
+    justify-content: left;
+    padding: 5% 0;
+    margin: 0 10% ;
+}
+
+.item-info-container {
+    margin-left:2%;
+    width: 60%;
+}
+.item-info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    
+}
+.item-name {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(255, 178, 63);
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.item-price {
+    font-weight: 600;
+    font-size: 16px;
+}
+.item-desc {
+    padding-top: 20px;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: rgb(61, 61, 61);
+}
+.single-item img {
+    width: 150px;
+    height: 120px;
+    border-radius: 5px;
+}
+
+.item-order {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top:30px;
+}
+.item-order button {
+    color: rgba(34, 34, 34, 0.795);
+    padding: 0 10px;
+    font-size: 16px;
+}
+.count {
+    pointer-events: none;
+}
+.item-order button:hover {
+    color:#c4deffb6;
+    transition: 300ms all ease;
+}
+
+/* Order Button */
+.order-btn {
+    right: 2%;
+    padding:20px 20px;
+    position: absolute;
+    top:0;
+}
+.order-btn i:hover{
+    color: rgba(201, 201, 201, 0.658);
+    transition: 300ms all;
+}
+.order-btn i{
+    position:fixed;
+    font-size: 26px;
+    color:black;
+    visibility: visible !important;
+}
+
+.order-basket {
+    margin-left: 2%;
+    position: fixed;
+    visibility: hidden;
+    height: 100vh;
+    background-color: rgba(189, 208, 211, 0.514);
+    
+}
+.order-basket-close {
+    top:0px;
+    width: 40%;
+    margin-left: 20%;
+    visibility: visible;
+    height: 100vh;
+    background-color: rgba(189, 208, 211, 0.514);
+}
