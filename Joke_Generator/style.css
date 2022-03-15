@@ -1,0 +1,48 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgb(45,65,75), rgb(125,125,225));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.btn-joke {
+    width: 25vw;
+    height: 40px;
+    font-size: 1.5em;
+    font-weight: lighter;
+    letter-spacing: .2em;
+    border:none;
+    color:whitesmoke;
+    background-color: goldenrod;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.btn-joke:hover {
+    background-color: gold;
+    border-radius: 10px;
+    transition: 300ms all;
+}
+.text-area {
+    width: 100%;
+    text-align: center;
+}
+.text {
+    margin-left: 10%;
+    width: 80%;
+    font-size: 24px;
+    color: whitesmoke;
+}
+.footer {
+    color: gainsboro;
+}
+a {
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+}
