@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(rgb(210,120,330), rgb(110,520,430));
+}
+h1 {
+    color : whitesmoke;
+    text-transform: uppercase;
+    padding: 10%;
+}
+#text2 {
+    color: whitesmoke;
+    font-size: 24px;
+    width: 90%;
+    font-weight: 100;
+}
