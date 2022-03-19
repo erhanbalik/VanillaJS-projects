@@ -67,9 +67,24 @@ header {
     border:none;
     background-color: transparent;
     font-size: 20px;
-    padding-left: 20px;
     cursor: pointer;
 }
+.mode-container {
+    position: relative;
+}
+.mode-text {
+    transition: 200ms all;
+}
+.light-mode-hide {
+    visibility: hidden !important;
+}
+.dark-mode {
+    visibility: hidden;
+}
+.dark-mode-show {
+    visibility: visible !important;
+}
+
 
 /* --------------Hamburger Menu-------------- */
 .open-menu {
@@ -133,7 +148,6 @@ header {
 footer {
     width: 100vw;
     height: 20vh;
-    background-color: #0c0c0c;
     margin-top: 10px;
 }
 .footer-container ul {
@@ -142,7 +156,4 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-.footer-container ul li a {
-    color: whitesmoke;
 }

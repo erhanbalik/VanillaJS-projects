@@ -5,10 +5,13 @@ const line3 = document.querySelector('.line3');
 const navMenu = document.querySelector('.nav-container');
 /* Dark Mode DOM */
 const modeText = document.querySelector('.mode-text');
-const modeBtn = document.querySelector('.mode-switch');
-const modeIcon = document.querySelector('.fa-sun');
-let isDark = true;
-let isLight = true;
+const lightBtn = document.querySelector('.light-mode');
+const darkBtn = document.querySelector('.dark-mode');
+const modeBtn = document.querySelector('mode-container');
+const footer = document.getElementById('footer');
+const footerItems = document.querySelectorAll('.footer-item');
+let isDark = false;
+
 
 /* Menu Slider */
 openMenu.addEventListener('click', () => {
@@ -18,27 +21,44 @@ openMenu.addEventListener('click', () => {
     navMenu.classList.toggle('nav-container-show');
 });
 
-modeBtn.addEventListener('click', () => {
-    switchTheme();
+darkBtn.addEventListener('click', () => {
+    lightBtn.classList.toggle('light-mode-hide');
+    darkBtn.classList.toggle('dark-mode-show');
+    modeText.textContent ='Light';
+    lightMode();
+})
+lightBtn.addEventListener('click', () => {
+    darkBtn.classList.toggle('dark-mode-show');
+    lightBtn.classList.toggle('light-mode-hide');
+    modeText.textContent ='Dark';
+    darkMode();
 })
 
 // Dark Mode
+    let head = document.body;
+    let navLine = document.querySelectorAll("#line");
 function darkMode () {
-    modeIcon.classList.replace('fa-sun', 'fa-moon');
-    modeText.textContent = "Dark";
+    head.style.backgroundColor = 'black';
+    modeText.style.color = 'whitesmoke';
+    darkBtn.style.color = 'whitesmoke';
+    footer.style.backgroundColor = 'black';
+    for (let i = 0; i < navLine.length; i++){
+        navLine.item(i).style.backgroundColor = 'whitesmoke';
+    }
+    for (let i = 0; i < footerItems.length; i++){
+        footerItems.item(i).style.color = 'whitesmoke';
+    }
 }
 // Light Mode
 function lightMode (){
-    modeIcon.classList.replace('fa-moon', 'fa-sun');
-    modeText.textContent = "Light";
-}
-
-// Switch Theme
-function switchTheme (){
-    if (isDark === true){
-        darkMode();
-
-    } else if(isLight === true){
-        lightMode();
+    head.style.backgroundColor = 'whitesmoke';
+    modeText.style.color = 'black';
+    darkBtn.style.color = 'black';
+    footer.style.backgroundColor = 'whitesmoke';
+    for (let i = 0; i < navLine.length; i++){
+        navLine.item(i).style.backgroundColor = 'black';
+    }
+    for (let i = 0; i < footerItems.length; i++){
+        footerItems.item(i).style.color = 'black';
     }
 }
